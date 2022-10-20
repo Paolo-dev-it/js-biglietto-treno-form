@@ -46,7 +46,7 @@
         </form>
         <div class="d-flex">
           <div class="col-6">
-            <button onclick="totalPriceTravel();return false">
+            <button id="" onclick="totalPriceTravel();return false">
               Costo totale
             </button>
           </div>
@@ -56,8 +56,6 @@
             </button>
           </div>
         </div>
-
-        <h2 id="totalKm"></h2>
       </div>
       <div class="row">
         <h2 class="text-uppercase text-center mt-5">il tuo biglietto</h2>
@@ -67,14 +65,13 @@
 
             <div class="card mb-3" style="max-width: 100%">
               <div class="row g-0">
-                <div
-                  class="col-md-4 d-flex justify-content-center bg-secondary"
-                >
+                <div class="col-md-4 justify-content-center bg-secondary">
                   <h3
                     class="text-uppercase d-flex justify-content-center align-items-center"
                   >
                     nome passeggero
                   </h3>
+                  <h4 id="passenger" class="d-flex justify-content-center"></h4>
                 </div>
                 <div class="col-md-8">
                   <table class="table table-borderless">
@@ -99,9 +96,9 @@
                       </tr>
                       <tr>
                         <td>Biglietto standard</td>
-                        <td>90000</td>
-                        <td>90000</td>
-                        <td>90000</td>
+                        <td id="numeroRandom"></td>
+                        <td id="cpCode"></td>
+                        <td id="totalKm"></td>
                       </tr>
                     </tbody>
                   </table>

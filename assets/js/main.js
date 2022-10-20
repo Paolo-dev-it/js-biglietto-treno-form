@@ -44,8 +44,12 @@ function totalPriceTravel(){
         price = price.toFixed(2)
     }
 
-    document.getElementById('totalKm').innerHTML = "Il costo totale del tuo percorso:" + " " + price + "€"
+    document.getElementById('totalKm').innerHTML = "" + " " + price + "€"
 
+    document.getElementById('passenger').innerHTML = valueNameSurname
 
+    document.getElementById('numeroRandom').innerHTML = Math.floor(Math.random() * 12) + 1;
+
+    document.getElementById('cpCode').innerHTML = Math.floor(Math.random() * 100000) + 1;
 
 }
