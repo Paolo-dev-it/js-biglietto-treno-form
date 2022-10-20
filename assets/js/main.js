@@ -12,6 +12,8 @@ function totalPriceTravel(){
 
     let choose = document.getElementById('select').value;
 
+    // Variabile Nome e cognome
+
     let valueNameSurname = document.getElementById('nameSurname').value;
 
     // Calcolo costo senza sconti al chilometro
@@ -30,7 +32,7 @@ function totalPriceTravel(){
 
     const seniorPrice = price - over;
 
-    
+
 
     if (choose == 1 ) {
         price = childPrice.toFixed(2)
