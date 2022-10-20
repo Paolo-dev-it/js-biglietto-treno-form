@@ -10,7 +10,7 @@ function totalPriceTravel(){
 
     // Variabile età che ha l'utente
 
-    let valueAge = document.getElementById('age').value;
+    let choose = document.getElementById('select').value;
 
     let valueNameSurname = document.getElementById('nameSurname').value;
 
@@ -30,12 +30,12 @@ function totalPriceTravel(){
 
     const seniorPrice = price - over;
 
+    
 
-
-    if (valueAge < 18) {
+    if (choose == 1 ) {
         price = childPrice.toFixed(2)
     }
-    else if (valueAge >= 65) {
+    else if (choose == 3) {
         price = seniorPrice.toFixed(2)
     } 
     else {

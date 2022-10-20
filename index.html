@@ -19,28 +19,42 @@
         <h2 class="text-uppercase">calcola il prezzo del tuo biglietto</h2>
 
         <form action="" class="d-flex">
-          <div>
-            <p>nome e cognome</p>
+          <div class="col-4">
+            <p>Nome e cognome</p>
             <input type="text" id="nameSurname" />
           </div>
-          <div>
+          <div class="col-4">
             <p>Km da percorrere</p>
-            <input
-              type="text"
-              id="numbersKm"
-              placeholder="Chilometri da percorrere"
-            />
+            <input type="text" id="numbersKm" />
           </div>
-          <div>
-            <p>nome e cognome</p>
-            <input type="text" id="age" placeholder="Tua età" />
+          <div class="col-4">
+            <p>Fascia d'età</p>
+
+            <select
+              class="form-select"
+              aria-label="Default select example"
+              id="select"
+            >
+              <option selected>Seleziona la tua fascia d'età</option>
+              <option value="1">Minorenne</option>
+              <option value="2">Maggiorenne</option>
+              <option value="3">Anziano</option>
+            </select>
           </div>
         </form>
-        <div>
-          <button onclick="totalPriceTravel();return false">
-            Costo totale
-          </button>
+        <div class="d-flex">
+          <div class="col-6">
+            <button onclick="totalPriceTravel();return false">
+              Costo totale
+            </button>
+          </div>
+          <div class="">
+            <button onclick="totalPriceTravel();return false">
+              Costo totale
+            </button>
+          </div>
         </div>
+
         <h2 id="totalKm"></h2>
       </div>
     </div>
