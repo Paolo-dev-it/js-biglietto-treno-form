@@ -14,42 +14,125 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body class="bg-danger">
-    <div class="container p-5">
-      <h2 class="text-uppercase text-center text-white">
-        calcola il prezzo del tuo biglietto
-      </h2>
-      <div class="row bg-white">
-        <form action="" class="d-flex mt-5 text-center" id="form">
-          <div class="col-4">
-            <p class="text-danger">Nome e cognome</p>
-            <input type="text" id="nameSurname" />
-          </div>
-          <div class="col-4">
-            <p>Km da percorrere</p>
-            <input type="text" id="numbersKm" />
-          </div>
-          <div class="col-4">
-            <p>Fascia d'età</p>
+        <form action="" class="" id="form">
+            <div class="container">
+                <div class="row ">
+                    <h2 class="text-uppercase text-center text-white fw-bold mt-5">
+                        calcola il prezzo del tuo biglietto
+                    </h2>
+                </div>
+                <div class="col-12 ">
 
-            <select
-              class="form-select"
-              aria-label="Default select example"
-              id="select"
-            >
-              <option value="1">Minorenne</option>
-              <option value="2">Maggiorenne</option>
-              <option value="3">Anziano</option>
-            </select>
+                    <div class="d-flex justify-content-around bg-white text-center  ">
+                        <div class="">
+                            <p class="text-danger">Nome e cognome</p>
+                            <input type="text" id="nameSurname" />
+                        </div>
+                        <div class="">
+                            <p class="text-danger">Km da percorrere</p>
+                            <input type="text" id="numbersKm" />
+                        </div>
+                        <div class="">
+                            <p class="text-danger">Fascia d'età</p>
+                            <select
+                                class="form-select"
+                                aria-label="Default select example"
+                                id="select"
+                                >
+                                <option value="1">Minorenne</option>
+                                <option value="2">Maggiorenne</option>
+                                <option value="3">Anziano</option>
+                            </select>
+                        </div>
+                    </div>
+             <div class="col-12 bg-white text-center p-1 ">
+                <button class="text-danger fw-bold border-danger rounded-1 p-1" id="" onclick="totalPriceTravel();return false">
+                            Costo totale
+                </button>
+                <button class="text-danger fw-bold  rounded-1 p-1" onclick="reset()" value="reset">Annulla</button>
+             </div>
+                </div>
+
+    </div>
+        <div class="container">
+            <div class="row bg-white pe-5">
+                    <div class="col">
+                        
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col ">
+                        
+                    </div>
+                </div>
+        </div>
+                
+            
+    
+
+        <div class="container  ">
+            <div class="row ticketResult" id="ticket">
+        <h2 class="text-uppercase text-center mt-5 fw-bold text-white">
+          il tuo biglietto
+        </h2>
+        <div class="col-12">
+          <div class="bg-white  p-4">
+            <h3 class="text-uppercase">dettaglio passeggeri</h3>
+
+            <div class="card mb-3" style="max-width: 100%">
+              <div class="row g-0">
+                <div class="col-md-4 justify-content-center bg-secondary p-4">
+                  <h3 class="text-uppercase d-flex align-items-center fw-bold">
+                    nome passeggero
+                  </h3>
+                  <h4 id="passenger" class="d-flex text-start"></h4>
+                </div>
+                <div class="col-md-8">
+                  <table class="table table-borderless">
+                    <thead>
+                      <tr>
+                        <th scope="col">Offerta</th>
+                        <th scope="col">Carrozza</th>
+                        <th scope="col">Codice CP</th>
+                        <th scope="col">Costo biglietto</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Biglietto standard</td>
+                        <td id="numeroRandom"></td>
+                        <td id="cpCode"></td>
+                        <td id="totalKm"></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
           </div>
+        </div>
+      </div>
+        </div>
+      
         </form>
-        <div class="d-flex">
+        <!-- <div class="d-flex">
           <div class="col-6 text-center">
             <button id="" onclick="totalPriceTravel();return false">
               Costo totale
             </button>
           </div>
           <div class="col-6 text-center">
-            <button onclick="reset();return false">Annulla</button>
+            <button onclick="reset()" value="reset">Annulla</button>
           </div>
         </div>
       </div>
@@ -103,7 +186,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
 
     <script

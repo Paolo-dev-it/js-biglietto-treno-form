@@ -57,5 +57,5 @@ function totalPriceTravel(){
 }
 
 function reset(){  
-   document.getElementById("form").reset();  
+   document.getElementById("form").value = ''  
  }
