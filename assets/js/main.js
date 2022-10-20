@@ -55,3 +55,7 @@ function totalPriceTravel(){
     document.getElementById('cpCode').innerHTML = Math.floor(Math.random() * 100000) + 1;
 
 }
+
+function reset(){  
+   document.getElementById("form").reset();  
+ }
