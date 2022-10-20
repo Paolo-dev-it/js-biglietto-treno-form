@@ -44,7 +44,9 @@ function totalPriceTravel(){
         price = price.toFixed(2)
     }
 
-    document.getElementById('totalKm').innerHTML = "" + " " + price + "€"
+    document.getElementById('totalKm').innerHTML = "" + "" + price + "€"
+
+    document.getElementById('ticket').style.display = "block"; 
 
     document.getElementById('passenger').innerHTML = valueNameSurname
 
